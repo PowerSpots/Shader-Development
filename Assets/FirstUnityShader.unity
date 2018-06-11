@@ -359,6 +359,7 @@ GameObject:
   - component: {fileID: 925432412}
   - component: {fileID: 925432411}
   - component: {fileID: 925432410}
+  - component: {fileID: 925432414}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -388,7 +389,7 @@ Camera:
   m_GameObject: {fileID: 925432409}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 2
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -423,12 +424,29 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 925432409}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 0, y: 1, z: -0.59}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &925432414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 925432409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4be8d032e9886e84b803e137513b098d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curShader: {fileID: 4800000, guid: 0e99cecdccb68f241914622654d2ecb9, type: 3}
+  InvertEffect: 0
+  DepthEffect: 0
+  LinearInvertEffect: 0
+  ToneMappingEffect: 0
+  ToneMapperExposure: 1.88
 --- !u!1 &969063809
 GameObject:
   m_ObjectHideFlags: 0
@@ -591,7 +609,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cbb4e9fa178c1464da13f3b796ee9d21, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cbb4e9fa178c1464da13f3b796ee9d21, type: 3}
       propertyPath: m_LocalPosition.z
@@ -620,7 +638,7 @@ Prefab:
     - target: {fileID: 2300000, guid: cbb4e9fa178c1464da13f3b796ee9d21, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 54a8ee454d7a5b7438c53a85d3d13056, type: 2}
+      objectReference: {fileID: 2100000, guid: 96b863f38e6a5794196e3dc5cf18e266, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cbb4e9fa178c1464da13f3b796ee9d21, type: 3}
   m_IsPrefabParent: 0
